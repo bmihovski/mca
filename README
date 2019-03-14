@@ -27,4 +27,11 @@ make rootfs                Upadate ROOTFS
 
 Cleaning:
 make clean                 Delete intermediate files
-make distclean             Also delete distribution-files
+make distclean             Also delete distribution-file
+
+How to change caids
+Edit CONFIG/CAIDS
+Edit CONFIG/CAM_VERSION increase it with one than current
+run make mca_cam.upb
+Which channels the  module is clearing
+In my case only net1, sprint, digital +, antik discovery channels, bulsatcom, the rest of the channels should be deleted
